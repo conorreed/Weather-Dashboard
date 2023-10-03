@@ -127,7 +127,7 @@ function searchForCity(cityName) {
     .catch((error) => console.error("Error fetching weather data:", error));
 }
 
-// from chatgpt
+
 function calculateDailyAverages(forecastData) {
   const dailyAverages = [];
 
