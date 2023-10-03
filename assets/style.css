@@ -1,25 +1,22 @@
-/* Style for the header */
-header {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* Style for the forecast cards */
-  #forecast-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Style for individual forecast card */
-  .forecast-card {
+.big-navbar {
+    min-height: 100px;
+}
+
+.search-history-button {
+    margin-bottom: 20px;
+}
+
+.five-day-box {
     background-color: darkblue;
     color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 200px;
-  }
-  
-  /* Additional styling for other elements can be added here */
-  
+    height: 260px;
+    padding: 20px;
+}
+
+.weather-image {
+    margin-bottom: 1.5rem;
+}
+
+.five-day-text {
+    color: white;
+}

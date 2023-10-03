@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Weather Dashboard</title>
-<link rel="stylesheet" href="./assets/style.css"></head>
-<body>
-
-<!-- Header -->
-<header>
-  <h1>Weather Dashboard</h1>
-  <!-- Navigation links if needed -->
-</header>
-
-<!-- Search Section -->
-<section id="search-section">
-  <label for="city-input">Enter a city:</label>
-  <input type="text" id="city-input" placeholder="Enter city">
-  <button id="search-button">Search</button>
-</section>
-
-<!-- Current Weather Section -->
-<section id="current-weather">
-  <h2>Current Weather</h2>
-  <p>Date: <span id="current-date"></span></p>
-  <p>Temperature: <span id="current-temperature"></span></p>
-  <p>Wind: <span id="current-wind"></span></p>
-  <p>Humidity: <span id="current-humidity"></span></p>
-</section>
-
-<!-- 5-Day Forecast Cards -->
-<section id="forecast-cards">
-  <!-- Each card will be dynamically generated based on the forecast data -->
-</section>
-
-<!-- Include JavaScript for dynamic functionality here -->
-<script src="./assets/script.js"></script>
-</body>
+  <head>
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar is-info big-navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <span class="navbar-item"
+          ><span class="is-size-1">Weather Dashboard</span></span
+        >
+      </div>
+    </nav>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="field">
+            <label class="label is-large">Search for a City:</label>
+            <div class="control">
+              <input
+                class="input is-large"
+                type="email"
+                placeholder="type a city"
+              />
+            </div>
+          </div>
+          <button class="button is-primary is-fullwidth">Search</button>
+          <hr />
+          <div id="search-history">
+            <button class="button is-light is-fullwidth search-history-button">
+              1
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              2
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              3
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              4
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              5
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              6
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              7
+            </button>
+            <button class="button is-light is-fullwidth search-history-button">
+              8
+            </button>
+          </div>
+        </div>
+        <div class="column is-9">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p id="selected-city-title" class="title is-3">
+                    Atlanta (9/13/2022)
+                  </p>
+                  <p id="selected-city-temp">Temp: 76.62F</p>
+                  <p id="selected-city-wind">Wind: 9.43 MPH</p>
+                  <p id="selected-city-humidity">Humidity: 44%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field" style="margin-top: 25px">
+            <label class="label is-large">5-Day Forecast:</label>
+          </div>
+          <div class="columns">
+            <div class="column is-one-fifth">
+              <div class="box five-day-box">
+                <p id="day1-date" class="title is-3 five-day-text">9/13/2022</p>
+                <img src="" class="weather-image" alt="weather image" />
+                <p id="day1-city-temp" class="title is-6 five-day-text">Temp: 76.62F</p>
+                <p id="day1-city-wind" class="title is-6 five-day-text">Wind: 9.43 MPH</p>
+                <p id="day1-city-humidity" class="title is-6 five-day-text">Humidity: 44%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Include JavaScript for dynamic functionality here -->
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
