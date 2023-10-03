@@ -27,52 +27,56 @@
             <label class="label is-large">Search for a City:</label>
             <div class="control">
               <input
+                id="city-input"
                 class="input is-large"
-                type="email"
+                type="text"
                 placeholder="type a city"
               />
             </div>
           </div>
-          <button class="button is-primary is-fullwidth">Search</button>
+          <button id="search-button" class="button is-primary is-fullwidth">
+            Search
+          </button>
           <hr />
           <div id="search-history">
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button1" class="button is-light is-fullwidth search-history-button">
               1
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button2"  class="button is-light is-fullwidth search-history-button">
               2
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button3"  class="button is-light is-fullwidth search-history-button">
               3
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button4"  class="button is-light is-fullwidth search-history-button">
               4
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button5" class="button is-light is-fullwidth search-history-button">
               5
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button  id="button6" class="button is-light is-fullwidth search-history-button">
               6
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button7" class="button is-light is-fullwidth search-history-button">
               7
             </button>
-            <button class="button is-light is-fullwidth search-history-button">
+            <button id="button8" class="button is-light is-fullwidth search-history-button">
               8
             </button>
           </div>
         </div>
-        <div class="column is-9">
+        <div id="right-pane" class="column is-9">
           <div class="card">
             <div class="card-content">
               <div class="media">
                 <div class="media-content">
                   <p id="selected-city-title" class="title is-3">
-                    Atlanta (9/13/2022)
+                    Atlanta  
                   </p>
-                  <p id="selected-city-temp">Temp: 76.62F</p>
-                  <p id="selected-city-wind">Wind: 9.43 MPH</p>
-                  <p id="selected-city-humidity">Humidity: 44%</p>
+                  <p id="day0-date">(9/13/2022)</p>
+                  <p id="day0-city-temp">Temp: 76.62F</p>
+                  <p id="day0-city-wind">Wind: 9.43 MPH</p>
+                  <p id="day0-city-humidity">Humidity: 99%</p>
                 </div>
               </div>
             </div>
@@ -81,20 +85,102 @@
             <label class="label is-large">5-Day Forecast:</label>
           </div>
           <div class="columns">
-            <div class="column is-one-fifth">
+           <!--  <div class="column is-one-fifth">
               <div class="box five-day-box">
-                <p id="day1-date" class="title is-3 five-day-text">9/13/2022</p>
+                <p id="day0-date" class="title is-3 five-day-text">9/13/2022</p>
                 <img src="" class="weather-image" alt="weather image" />
-                <p id="day1-city-temp" class="title is-6 five-day-text">Temp: 76.62F</p>
-                <p id="day1-city-wind" class="title is-6 five-day-text">Wind: 9.43 MPH</p>
-                <p id="day1-city-humidity" class="title is-6 five-day-text">Humidity: 44%</p>
+                <p id="day0-city-temp" class="title is-6 five-day-text">
+                  Temp: 76.62F
+                </p>
+                <p id="day0-city-wind" class="title is-6 five-day-text">
+                  Wind: 9.43 MPH
+                </p>
+                <p id="day0-city-humidity" class="title is-6 five-day-text">
+                  Humidity: 44%
+                </p>
               </div>
-            </div>
+            </div> -->
+            <div class="column is-one-fifth">
+                <div class="box five-day-box">
+                  <p id="day1-date" class="title is-3 five-day-text">9/13/2022</p>
+                  <img src="" class="weather-image" alt="weather image" />
+                  <p id="day1-city-temp" class="title is-6 five-day-text">
+                    Temp: 76.62F
+                  </p>
+                  <p id="day1-city-wind" class="title is-6 five-day-text">
+                    Wind: 9.43 MPH
+                  </p>
+                  <p id="day1-city-humidity" class="title is-6 five-day-text">
+                    Humidity: 44%
+                  </p>
+                </div>
+              </div>
+              <div class="column is-one-fifth">
+                <div class="box five-day-box">
+                  <p id="day2-date" class="title is-3 five-day-text">9/13/2022</p>
+                  <img src="" class="weather-image" alt="weather image" />
+                  <p id="day2-city-temp" class="title is-6 five-day-text">
+                    Temp: 76.62F
+                  </p>
+                  <p id="day2-city-wind" class="title is-6 five-day-text">
+                    Wind: 9.43 MPH
+                  </p>
+                  <p id="day2-city-humidity" class="title is-6 five-day-text">
+                    Humidity: 44%
+                  </p>
+                </div>
+              </div>
+              <div class="column is-one-fifth">
+                <div class="box five-day-box">
+                  <p id="day3-date" class="title is-3 five-day-text">9/13/2022</p>
+                  <img src="" class="weather-image" alt="weather image" />
+                  <p id="day3-city-temp" class="title is-6 five-day-text">
+                    Temp: 76.62F
+                  </p>
+                  <p id="day3-city-wind" class="title is-6 five-day-text">
+                    Wind: 9.43 MPH
+                  </p>
+                  <p id="day3-city-humidity" class="title is-6 five-day-text">
+                    Humidity: 44%
+                  </p>
+                </div>
+              </div>
+              <div class="column is-one-fifth">
+                <div class="box five-day-box">
+                  <p id="day4-date" class="title is-3 five-day-text">9/13/2022</p>
+                  <img src="" class="weather-image" alt="weather image" />
+                  <p id="day4-city-temp" class="title is-6 five-day-text">
+                    Temp: 76.62F
+                  </p>
+                  <p id="day4-city-wind" class="title is-6 five-day-text">
+                    Wind: 9.43 MPH
+                  </p>
+                  <p id="day4-city-humidity" class="title is-6 five-day-text">
+                    Humidity: 44%
+                  </p>
+                </div>
+              </div>
+              <div class="column is-one-fifth">
+                <div class="box five-day-box">
+                  <p id="day5-date" class="title is-3 five-day-text">9/13/2022</p>
+                  <img src="" class="weather-image" alt="weather image" />
+                  <p id="day5-city-temp" class="title is-6 five-day-text">
+                    Temp: 76.62F
+                  </p>
+                  <p id="day5-city-wind" class="title is-6 five-day-text">
+                    Wind: 9.43 MPH
+                  </p>
+                  <p id="day5-city-humidity" class="title is-6 five-day-text">
+                    Humidity: 44%
+                  </p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Include JavaScript for dynamic functionality here -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
