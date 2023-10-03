@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Dashboard</title>
+<link rel="stylesheet" href="./assets/style.css"></head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Weather Dashboard</h1>
+  <!-- Navigation links if needed -->
+</header>
+
+<!-- Search Section -->
+<section id="search-section">
+  <label for="city-input">Enter a city:</label>
+  <input type="text" id="city-input" placeholder="Enter city">
+  <button id="search-button">Search</button>
+</section>
+
+<!-- Current Weather Section -->
+<section id="current-weather">
+  <h2>Current Weather</h2>
+  <p>Date: <span id="current-date"></span></p>
+  <p>Temperature: <span id="current-temperature"></span></p>
+  <p>Wind: <span id="current-wind"></span></p>
+  <p>Humidity: <span id="current-humidity"></span></p>
+</section>
+
+<!-- 5-Day Forecast Cards -->
+<section id="forecast-cards">
+  <!-- Each card will be dynamically generated based on the forecast data -->
+</section>
+
+<!-- Include JavaScript for dynamic functionality here -->
+<script src="./assets/script.js"></script>
+</body>
+</html>
